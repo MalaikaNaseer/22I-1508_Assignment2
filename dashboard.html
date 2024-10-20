@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="logo"> Weather App</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="table.html">Tables</a>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <h1>Weather Daashboard</h1>
+        <div class="input-section">
+            <input type="text" id="locationinput" placeholder="Enter any city">
+            <button id="search">Get Weather</button>
+            <p id="error" class="errorMessage"></p>
+        </div>
+
+        
+        <div id="weather-widget" class="weather-widget">
+            <div class="widget-background" id="widgetBackground"></div>
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <button id="toggle-unit" style="display:none;">Switch to Fahrenheit</button>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="windspeed"></p>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="tempBarChart"></canvas>
+            <canvas id="wthrDoughnutChart"></canvas>
+            <canvas id="tempLineChart"></canvas>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

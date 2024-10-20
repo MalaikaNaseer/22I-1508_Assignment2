@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2 class="logo"> Weather App</h2>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="table.html">Tables</a>
+        </nav>
+    
+    </div>
+
+    <div class="main-content">
+        <h1>Weather Dashboard</h1>
+        <div class="header">
+            <div class="input-section">
+                <input type="text" id="locationinput" placeholder="Enter a city">
+                <button id="search">Get Weather</button>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button id="sortAsc">Ascending Temperature</button>
+            <button id="sortDsc">Descending Temperature</button>
+            <button id="filter">Filter</button>
+            <button id="HighestTemp">Highest Temperature</button>
+        </div>
+
+        <div class="table-container">
+            <table id="weatherTable">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Temperature (°C)</th>
+                        <th>Weather Condition</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody">
+
+                </tbody>
+            </table>
+            <div id="pagination"></div>
+        </div>
+        <div class="chat">
+            <div id="chatbot">
+                <div id="chatarea"></div>
+                <input type="text" id="userInput" placeholder="Ask weather related queries">
+                <button id="send">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="table.js"></script>
+</body>
+</html>
